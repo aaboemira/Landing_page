@@ -97,14 +97,15 @@ function scroll(){
 		btn.innerHTML= `<a href="javascript:void(0);" class="icon" onclick="buttonclick()">
     	<i class="fa fa-bars"></i>
   		</a>`;
+		  console.log(btn)
 	    for (const section of sections) {
-	    let Name=section.getAttribute("data-nav");
-    	let li=document.createElement("li");
-    	let link= document.createElement("a");
-    	link.className="menu__link";
-    	link.textContent=(Name);
-    	li.appendChild(link);
-    	nav.appendChild(li);
+			let Name=section.getAttribute("data-nav");
+			let li=document.createElement("li");
+			let link= document.createElement("a");
+			link.className="menu__link";
+			link.textContent=(Name);
+			li.appendChild(link);
+			nav.appendChild(li);
     }
     nav.appendChild(btn);
 }

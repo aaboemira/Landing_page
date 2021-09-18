@@ -82,7 +82,7 @@ function scroll(){
 	links.forEach((link)=>{
 		link.addEventListener('click', function (e){
 		e.preventDefault();
-		var section=document.querySelector(this.getAttribute('href'));
+		let section=document.querySelector(this.getAttribute('href'));
 		section.scrollIntoView({behavior:"smooth"});
 		console.log(section.getBoundingClientRect().top);
 		});

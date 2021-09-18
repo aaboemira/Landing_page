@@ -103,7 +103,6 @@ function scroll(){
     	let link= document.createElement("a");
     	link.className="menu__link";
     	link.textContent=(Name);
-    	link.setAttribute("href",`#${section.id}`);
     	li.appendChild(link);
     	nav.appendChild(li);
     }
